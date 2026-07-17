@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">TimePort</span>
+    </div>
+    <div class="my-zone">
+      <label for="targetZone">Show times in</label>
+      <select id="targetZone"></select>
+    </div>
+  </header>
+
+  <section class="converter">
+    <label class="field-label" for="smartInput">Type or paste any time</label>
+    <input id="smartInput" type="text" autocomplete="off" spellcheck="false"
+           placeholder='e.g. "3pm EST" or "14:00 UTC+2"' />
+    <div id="hint" class="hint">Understands EST, PST, CET, IST, JST, UTC+5:30 and more</div>
+
+    <div id="resultCard" class="result hidden">
+      <div class="result-row">
+        <div class="result-side">
+          <div class="result-label" id="srcLabel">THEIR TIME</div>
+          <div class="result-time small" id="srcTime">—</div>
+        </div>
+        <div class="result-arrow">→</div>
+        <div class="result-side">
+          <div class="result-label accent" id="tgtLabel">YOUR TIME</div>
+          <div class="result-time" id="tgtTime">—</div>
+        </div>
+      </div>
+      <div class="result-date" id="tgtDate"></div>
+    </div>
+  </section>
+
+  <section class="clocks">
+    <div class="clocks-head">
+      <span class="field-label">World clocks</span>
+      <select id="addClock" title="Add a clock">
+        <option value="">+ Add</option>
+      </select>
+    </div>
+    <div id="clockList"></div>
+  </section>
+
+  <footer class="foot">
+    <label class="toggle">
+      <input type="checkbox" id="detectToggle" />
+      <span class="track"><span class="thumb"></span></span>
+      <span class="toggle-text">Underline times on pages <small>hover any underlined time to convert it</small></span>
+    </label>
+  </footer>
+
+  <script src="tz.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* TimePort — injected page styles */
+
+.tpc-time {
+  border-bottom: 1.5px dashed #f59e0b !important;
+  cursor: help !important;
+  text-decoration: none !important;
+}
+
+.tpc-tooltip,
+.tpc-bubble {
+  position: absolute !important;
+  z-index: 2147483647 !important;
+  background: #0d1220 !important;
+  color: #e8ecf6 !important;
+  border: 1px solid #26304d !important;
+  border-radius: 9px !important;
+  padding: 8px 12px !important;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45) !important;
+  pointer-events: none !important;
+  max-width: 260px !important;
+  text-align: center !important;
+}
+
+.tpc-bubble { pointer-events: auto !important; }
+
+.tpc-big,
+.tpc-b-tgt {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace !important;
+  font-variant-numeric: tabular-nums !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #ffb454 !important;
+  white-space: nowrap !important;
+}
+
+.tpc-sub,
+.tpc-b-date {
+  color: #8b94ad !important;
+  font-size: 11px !important;
+  margin-top: 2px !important;
+  white-space: nowrap !important;
+}
+
+.tpc-b-src {
+  color: #8b94ad !important;
+  font-size: 11px !important;
+  white-space: nowrap !important;
+}
